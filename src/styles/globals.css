@@ -2,26 +2,42 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+body{
+  background-color: black;
+  color: white;
+  padding: 2rem 8rem;
+}
+input,textarea,select{
+  color:white;
+}
+@media (max-width:1500px){
+  body{
+    padding: 2rem 4rem ;
   }
 }
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+@media (max-width:1350px){
+  body{
+    padding: 2rem 2rem ;
+  }
+}
+@media (max-width:1280px){
+  body{
+    padding: 2rem 7rem ;
+  }
+}
+@media (max-width:1024px){
+  body{
+    padding: 2rem 3rem ;
+  }
+}
+@media (max-width:570px){
+  body{
+    padding: 2rem 1rem ;
+  }
 }
